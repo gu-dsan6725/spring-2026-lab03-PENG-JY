@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/scripts/check_python.sh",
+            "timeout": 30,
+            "statusMessage": "Running ruff and py_compile..."
+          },
+          {
+            "type": "prompt",
+            "prompt": "If the file you just wrote or edited is a .py file (not a test file), check if a corresponding test file exists in a tests/ directory. If no test file exists, create one with pytest unit tests covering the public functions. Name it test_<filename>.py in the tests/ directory. Skip this for __init__.py files and files that are themselves test files."
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/scripts/block_force_push.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
