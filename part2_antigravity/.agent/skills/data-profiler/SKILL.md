@@ -12,7 +12,8 @@ When profiling a dataset, generate a comprehensive data profile:
 5. **Unique Values**: Count of unique values per column
 6. **Distribution Shape**: Skewness and kurtosis for numeric columns
 7. **Outlier Detection**: Count of outliers per column using the IQR method
-8. **Correlation**: Top 5 most correlated feature pairs
+8. **Correlation**: Top 5 feature pairs AND a full **Correlation Heatmap**.
+9. **Class Balance**: Count and plot of target classes (for classification tasks).
 
 Save the profile as a markdown report to `output/data_profile.md`.
 

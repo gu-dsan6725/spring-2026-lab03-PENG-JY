@@ -1,7 +1,29 @@
 # ML Project - Antigravity Rules
 
 ## Project Overview
-This project performs exploratory data analysis and builds an XGBoost model using scikit-learn datasets.
+This project performs exploratory data analysis and builds an XGBoost model for the **UCI Wine Classification** task (`sklearn.datasets.load_wine()`).
+
+## Project Requirements
+
+### 1. Exploratory Data Analysis (EDA)
+- **Profile**: Summary statistics, missing values, data types.
+- **Plots**: Distribution plots (histograms/KDE) for *all* features, Correlation Heatmap, Class Balance plot.
+- **Analysis**: Check for outliers using IQR.
+
+### 2. Feature Engineering
+- **Derived Features**: Must create at least 3 domain-specific features (e.g., alcohol/malic ratio).
+- **Scaling**: Use `StandardScaler`.
+- **Splitting**: Use `StratifiedShuffleSplit` (80% train / 20% test).
+
+### 3. Model Training
+- **Algorithm**: `XGBoost` Classifier (`XGBClassifier`).
+- **Validation**: 5-Fold Cross-Validation on training set.
+- **Optimization**: `RandomizedSearchCV` (n_iter=20).
+
+### 4. Reporting
+- **Metrics**: Accuracy, Precision, Recall, F1-Score (Weighted & Per-Class).
+- **Plots**: Confusion Matrix, Feature Importance.
+- **Report**: Save comprehensive markdown report to `output/evaluation_report.md`.
 
 ## Coding Standards
 
