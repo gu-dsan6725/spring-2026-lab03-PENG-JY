@@ -1,0 +1,80 @@
+[
+  {
+    "column": "alcohol",
+    "n_outliers": 0,
+    "lower_bound": 10.379999999999999,
+    "upper_bound": 15.66
+  },
+  {
+    "column": "malic_acid",
+    "n_outliers": 3,
+    "lower_bound": -0.6499999999999999,
+    "upper_bound": 5.35
+  },
+  {
+    "column": "ash",
+    "n_outliers": 3,
+    "lower_bound": 1.6849999999999998,
+    "upper_bound": 3.085
+  },
+  {
+    "column": "alcalinity_of_ash",
+    "n_outliers": 4,
+    "lower_bound": 10.749999999999998,
+    "upper_bound": 27.950000000000003
+  },
+  {
+    "column": "magnesium",
+    "n_outliers": 4,
+    "lower_bound": 59.5,
+    "upper_bound": 135.5
+  },
+  {
+    "column": "total_phenols",
+    "n_outliers": 0,
+    "lower_bound": 0.15000000000000013,
+    "upper_bound": 4.39
+  },
+  {
+    "column": "flavanoids",
+    "n_outliers": 0,
+    "lower_bound": -1.32,
+    "upper_bound": 5.4
+  },
+  {
+    "column": "nonflavanoid_phenols",
+    "n_outliers": 0,
+    "lower_bound": 0.015000000000000013,
+    "upper_bound": 0.6950000000000001
+  },
+  {
+    "column": "proanthocyanins",
+    "n_outliers": 2,
+    "lower_bound": 0.20000000000000018,
+    "upper_bound": 3.0
+  },
+  {
+    "column": "color_intensity",
+    "n_outliers": 3,
+    "lower_bound": -1.2750000000000004,
+    "upper_bound": 10.685
+  },
+  {
+    "column": "hue",
+    "n_outliers": 1,
+    "lower_bound": 0.2699999999999999,
+    "upper_bound": 1.6300000000000003
+  },
+  {
+    "column": "od280/od315_of_diluted_wines",
+    "n_outliers": 0,
+    "lower_bound": 0.07000000000000006,
+    "upper_bound": 5.029999999999999
+  },
+  {
+    "column": "proline",
+    "n_outliers": 0,
+    "lower_bound": -227.5,
+    "upper_bound": 1712.5
+  }
+]
